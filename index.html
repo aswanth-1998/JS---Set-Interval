@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+       var h=12;
+       var m=0;
+       var s=0;
+       var d = new Date();
+      var myVar = setInterval(timer, 1000); 
+       function timer() {
+     s+=1;
+     d.setHours(h);
+     d.setMinutes(m);
+     d.setSeconds(s);
+     var t = d.toLocaleTimeString();
+     document.getElementById("timer").innerHTML ="Current time:"+t;
+      }
+   
+    </script>
+    <style>
+        body {
+            background-color: #007bff26;
+            font-family: lato;
+            line-height: 25px;
+        }
+
+        div#blogName {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        div#subDescription {
+            color: #491ab7;
+            font-size: 22px;
+        }
+
+        div#url {
+            color: #217d3a;
+            font-size: 18px;
+        }
+
+        div#description {
+            color: #5a5a5a;
+            font-size: 18px;
+        }
+
+        div#author,
+        div#datePublished,
+        div#likes,
+        div#category {
+            color: #5a5a5a;
+            font-size: 16px;
+        }
+
+        div#blog1,
+        div#blog2 {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h2>Blogs</h2>
+    </center>
+
+    <div id="timer">
+     Current Time : 12:00:00
+
+    </div>
+
+    <div id=" result">
+        <div id="blogName">Nerd Fitness</div>
+        <div id="blog1">
+            <div id="subDescription">Nerd Fitness: Helping You Lose Weight, Get Stronger, Live Better.</div>
+            <div id="url">https://www.nerdfitness.com/</div>
+            <div id="description">Nerd Fitness: A fitness website for nerds and average Joes. Helping you lose weight
+                and get stronger, live better.</div>
+            <div id="author">Author : Tim Green</div>
+            <div id="datePublished">Published Date : 11/12/2018</div>
+            <div id="likes">Likes : 956 Likes</div>
+            <div id="category">Category : Health and Fitness</div>
+        </div>
+        <div id="blogName">Engadget</div>
+        <div id="blog2">
+            <div id="subDescription">Engadget</div>
+            <div id="url">https://www.engadget.com/</div>
+            <div id="description">Engadget is the original home for technology news and reviews. Since its founding in
+                2004, we've grown from an exhaustive source for consumer tech news to a ...</div>
+            <div id="author">Author : Charles Dickens</div>
+            <div id="datePublished">Published Date : 07/05/2019</div>
+            <div id="likes">Likes : 1000 Likes</div>
+            <div id="category">Category : Technology</div>
+        </div>
+    </div>
+    
+        
+    </body>
+
+</html>
